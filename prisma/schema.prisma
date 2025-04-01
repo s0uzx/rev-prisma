@@ -30,3 +30,14 @@ model Anime {
   @@map("animes")
 
 }
+
+model Personagem {
+  id Int @id @default(autoincrement())
+  name String
+  age Int 
+  power Boolean
+  description String? 
+  anime String
+
+  @@map("personagens")
+}
